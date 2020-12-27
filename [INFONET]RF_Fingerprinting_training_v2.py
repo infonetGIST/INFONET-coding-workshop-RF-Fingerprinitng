@@ -275,9 +275,9 @@ for zzz in range(Avg_times):
                     else:
                         inputs_sig_val = inputs_raw_real.numpy() + 1j * imputs_raw_image.numpy()
 
-                    # features_sig, features_spectrum, _ , _ = Extractors.RTextraction(inputs_sig_val)
+                    features_sig, features_spectrum, _ , _ = Extractors.RTextraction(inputs_sig_val)
 
-                    features_sig, features_spectrum, _ , _ = Extractors.SSextraction(inputs_sig_val)
+                    # features_sig, features_spectrum, _ , _ = Extractors.SSextraction(inputs_sig_val)
 
                     tmp = np.reshape(features_spectrum,
                                      (
